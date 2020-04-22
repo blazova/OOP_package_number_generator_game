@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 46,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -12,7 +12,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 55,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -69,7 +69,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 56,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -94,7 +94,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 57,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -123,7 +123,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 58,
+   "execution_count": 5,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -132,14 +132,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 59,
+   "execution_count": 6,
    "metadata": {},
    "outputs": [],
    "source": [
     "class PersonPlayer(Player):\n",
     "    \n",
     "    def pick_number(self, max_number):\n",
-    "        return int(input(\"Pick a number within 0 and {}.\".format(max_number)))\n",
+    "        return int(input(\"Pick a number within 0 and {} and let the Computer guess.\".format(max_number)))\n",
     "    \n",
     "    def guess_number(self, max_number, response=None):\n",
     "        return int(input(\"Guess a number within the range of 0 and {}\".format(max_number)))\n",
@@ -148,7 +148,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 60,
+   "execution_count": 7,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -157,7 +157,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 61,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -166,50 +166,42 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 62,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [
     {
      "name": "stdin",
      "output_type": "stream",
      "text": [
-      "Pick a number within 0 and 20. 8\n"
+      "Pick a number within 0 and 20. 1\n"
      ]
     },
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "17\n",
+      "13\n",
       "Too high. The generated number is lower.\n",
-      "12\n",
+      "5\n",
       "Too high. The generated number is lower.\n",
-      "11\n",
+      "2\n",
       "Too high. The generated number is lower.\n",
-      "3\n",
-      "Too low. The number is greater than 3.\n",
-      "17\n",
+      "0\n",
+      "Too low. The number is greater than 0.\n",
+      "19\n",
       "Too high. The generated number is lower.\n",
       "13\n",
       "Too high. The generated number is lower.\n",
-      "0\n",
-      "Too low. The number is greater than 0.\n",
-      "7\n",
-      "Too low. The number is greater than 7.\n",
-      "7\n",
-      "Too low. The number is greater than 7.\n",
-      "15\n",
+      "10\n",
+      "Too high. The generated number is lower.\n",
+      "5\n",
+      "Too high. The generated number is lower.\n",
+      "2\n",
+      "Too high. The generated number is lower.\n",
+      "2\n",
       "Too high. The generated number is lower.\n",
       "1\n",
-      "Too low. The number is greater than 1.\n",
-      "11\n",
-      "Too high. The generated number is lower.\n",
-      "0\n",
-      "Too low. The number is greater than 0.\n",
-      "17\n",
-      "Too high. The generated number is lower.\n",
-      "8\n",
-      "Dobre! You made it on 15 attempt(s).\n"
+      "Dobre! You made it on 11 attempt(s).\n"
      ]
     }
    ],
@@ -219,7 +211,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 63,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -251,7 +243,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 64,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -265,18 +257,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 65,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
     "# testing\n",
     "\n",
-    "def random_number(max_number):\n",
-    "    return input(\"Computer chose a random integer between 0 and {}. Can you guess the number?\".format(max_number))\n",
+    "# def random_number(max_number):\n",
+    "#     return input(\"Computer chose a random integer between 0 and {}. Can you guess the number?\".format(max_number))\n",
     "    \n",
-    "#     print(randint(0, max_number))\n",
+    "# #     print(randint(0, max_number))\n",
     "\n",
-    "random_number(20)"
+    "# random_number(20)"
    ]
   },
   {
