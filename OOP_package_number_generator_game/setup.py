@@ -1,7 +1,7 @@
 from setuptools import setup
 
-setup(name='guessing_game',
+setup(name='oop_guessing_game',
       version='0.1',
-      description='Simple game between two players where one pick a nunmber within a specific range and the other one guesses it',
-      packages=['quessing_game'],
+      description='Simple modularized game between two players where one picks a number within a specific range and the other one guesses it',
+      packages=['oop_guessing_game'],
       zip_safe=False)
